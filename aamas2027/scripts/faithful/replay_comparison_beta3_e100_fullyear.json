@@ -1,0 +1,62 @@
+{
+  "reference": "agent_eval_dataset_decomposed_epoch500_thermal3_tclip50_selector-sample_propdet_s20260728.npz",
+  "steps_compared": 52559,
+  "replayed_masks": true,
+  "selector_draws_replaced": 52559,
+  "observations": {
+    "zone temperature": {
+      "max": 3.6252994537353516,
+      "mean": 0.003994376859122568,
+      "ref_mean_abs": 21.988957958562196
+    },
+    "lighting rate": {
+      "max": 212.39715576171875,
+      "mean": 0.11105297523835957,
+      "ref_mean_abs": 167.41640752287563
+    },
+    "transmitted solar": {
+      "max": 0.0,
+      "mean": 0.0,
+      "ref_mean_abs": 462.2643564751742
+    },
+    "exterior irradiance": {
+      "max": 0.0,
+      "mean": 0.0,
+      "ref_mean_abs": 104.67792768195413
+    },
+    "WPI": {
+      "max": 71.77587890625,
+      "mean": 0.4381263263515215,
+      "ref_mean_abs": 416.24281582959503
+    },
+    "HVAC demand": {
+      "max": 20000.3388671875,
+      "mean": 17.776729570893693,
+      "ref_mean_abs": 13554.010381493172
+    },
+    "time/occupancy": {
+      "max": 0.0,
+      "mean": 0.0,
+      "ref_mean_abs": 0.487038974742213
+    }
+  },
+  "actions": {
+    "glazing": {
+      "max": 0.6666666865348816,
+      "share_steps_equal": 0.9996955802051029
+    },
+    "lighting": {
+      "max": 0.15375077724456787,
+      "share_steps_equal": 0.7217793337011739
+    },
+    "heating": {
+      "max": 1.5593414306640625,
+      "share_steps_equal": 0.21408322076143002
+    },
+    "cooling": {
+      "max": 1.99212646484375,
+      "share_steps_equal": 0.11434768545824692
+    }
+  },
+  "first_step_temp_diff_gt_0.01C": 486
+}

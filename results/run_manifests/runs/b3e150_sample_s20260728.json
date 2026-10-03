@@ -1,0 +1,147 @@
+{
+  "status": "ok",
+  "run_name": "b3e150_sample_s20260728",
+  "command": "$CONDA_PREFIX/bin/python aamas2027/scripts/run_eval.py --run-name b3e150_sample_s20260728 --checkpoint checkpoints/sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3/sdar_iql_sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3_checkpoint_epoch150.pt --mode sample --selector-seed 20260728",
+  "started": "2026-10-01T17:45:12",
+  "project_root": ".",
+  "args": {
+    "checkpoint": "checkpoints/sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3/sdar_iql_sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3_checkpoint_epoch150.pt",
+    "mode": "sample",
+    "selector_seed": 20260728,
+    "phase_seed": 20260728,
+    "rates": null,
+    "safeguard": "on",
+    "reward_reference": "pooled_sdar_experts_thermal3_tclip50.npz",
+    "reward_reference_sha": "5c6c255e3b7791c4c31b76ea865a36a1933edb3b443a1406970056c7582cadfb",
+    "expect_checkpoint_sha": "",
+    "weather": "usa_ca_san_francisco",
+    "run_name": "b3e150_sample_s20260728",
+    "runs_dir": "aamas2027/runs",
+    "overwrite": false,
+    "provenance_steps": 2000,
+    "smoke_days": 0
+  },
+  "checkpoint": {
+    "path": "checkpoints/sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3/sdar_iql_sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3_checkpoint_epoch150.pt",
+    "sha256": "81872f9318d9f111591c6318aac44531b233277a99b752d8747f9568c29d1c24",
+    "epoch": 150,
+    "run_name": "sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3",
+    "dataset_path": "pooled_sdar_experts_thermal3_tclip50.npz",
+    "iql_beta": 3.0
+  },
+  "reward_reference": {
+    "path": "pooled_sdar_experts_thermal3_tclip50.npz",
+    "sha256": "5c6c255e3b7791c4c31b76ea865a36a1933edb3b443a1406970056c7582cadfb"
+  },
+  "evaluation_code": {
+    "run_eval.py": "5b2288c583cd9fdbb4db6cffb8193c8e1bbd785bdb2845e0d30674eacde3bf47",
+    "CELLS.json": "76baeee008868634f466aedb8def91e7c135284182d3e1664e2c2ce10739c176",
+    "faithful/cells/abl_05_ablation_callback.py": "da62c1e6145317d017d5b72cd99acae090be5abb8b884eff3983cd767c362797",
+    "faithful/cells/abl_09_fixed_rate_builder.py": "247e6102a01320b6d4675ba38e8b25edfa2594f48b11105bc5b5473642d006ec",
+    "faithful/cells/gen1_00_imports.py": "703c749280026e71146f9fc6a21c406be80dcaad3cba2e56175ba435b4b2df3e",
+    "faithful/cells/gen1_01_model.py": "9216b65ae714940443e2d3f2b6e854dbe9bc7e45d1f7fe0c4d0f54b129bbcca5",
+    "faithful/cells/gen1_02_glazing.py": "5e0a68890cb4f337a9035cd56d6ef319f8c2d9b2b5667eeebd57294fa2de00c0",
+    "faithful/cells/gen1_03_add_glazing_lighting.py": "5f20449913a5a2024fa2fdbd974839362eb004a7f93a28fa074e62a5cf6c9f45",
+    "faithful/cells/gen1_04_energyplus_setup.py": "4e41c5dfd7efb350fd81e543543557baaf87a73c646190217a617053b3ea48a2",
+    "faithful/cells/gen1_14_eval_callback.py": "63810bb67bc3f861e40eb782ce6f8cea946cd97790ae845aaf15339bcd479f89",
+    "faithful/cells/gen1_46_rollout_builder.py": "17b918683c2ab5149d2788a2002e3c1e608a9ca54af527c78a4baff68bdafff0",
+    "faithful/cells/train_beta3_cell00.py": "aeb0da739b2403319de1ac321b0a3416dbf68add84d36a97002f5ae1091ed44d",
+    "sdar_eval/kpis.py": "e7ef661d5089d6885131b0f35bd1210d245c9f86c2d7ac8058d9d0bce001b8f8",
+    "sdar_eval/kpis_npz.py": "7592e85ecd8827fcf9af37d665b5bddb610a559e021f43a7eb3753a69477e8fb",
+    "sdar_eval/nb_builder.py": "1e16831491b81e0e083662658810306f2a7d96ababee63675137bdfff8fe82b9",
+    "sdar_eval/nb_callback.py": "c447edb36d0c9fd8ee3125bd5d7a4981830ca9decb25edfa9645082a07c79696",
+    "sdar_eval/provenance.py": "d778032189fa9a7dba7f4a4c832b693fe16043d4b8031089ffd150923d2422a5",
+    "sdar_eval/sim_setup.py": "c9dbc60e05c7f2fba27d03e58b51815046231be723d94101823b3563a4b9edcb",
+    "sdar_iql_train_3_updated.py": "53abf8b50eebe6b6501a893bef26a65969c8f42e8385a72bc67977b2a82bbbe5",
+    "sdar_iql_train_4_updated.py": "dded238b716adff26f11c71504bfcae1d28c21ac1955ba3258ed68dd795d56ac"
+  },
+  "notebooks": {
+    "new_dataset_gen1.ipynb": {
+      "sha256": "aba7e3df01a950fb1473830ddbbfa72dfece446ff936561aa7887144d3c8bed9",
+      "n_cells": 47
+    },
+    "Ablation_sdar_.ipynb": {
+      "sha256": "5e2e2d0c7b1f4bef5f76116f65a14adfc279990fcafd710d1947c9f8672c7edd",
+      "n_cells": 10
+    },
+    "new_new_removed_batch_normalizatrion.ipynb": {
+      "sha256": "ba938c8e1a2f4a162b2815c18d0fbc2fa5d42b2e3bf2d91760d529df81c32720",
+      "n_cells": 1
+    }
+  },
+  "versions": {
+    "python": "3.11.15",
+    "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.41",
+    "hostname": "workstation",
+    "conda_env": "offrl_5zone",
+    "numpy": "2.4.6",
+    "torch": "2.11.0+cu128",
+    "frads": "2.1.15",
+    "pyradiance": "1.1.5",
+    "pywincalc": "unavailable: AttributeError(\"module 'pywincalc' has no attribute '__version__'\")",
+    "pandas": "3.0.2",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 5090",
+    "cuda_visible_devices": "0",
+    "git_commit": null
+  },
+  "updated": "2026-10-01T18:01:00",
+  "simulation": {
+    "weather_arg": "usa_ca_san_francisco",
+    "weather_epw": "$CONDA_PREFIX/lib/python3.11/site-packages/pyenergyplus/data/weather/USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw",
+    "weather_epw_sha256": "b69e012e7ff8a5d3e610a19acc1ceb84926feae1f4347192b9388459423bf29c",
+    "setup_cells": [
+      "gen1_00_imports.py",
+      "gen1_01_model.py",
+      "gen1_02_glazing.py",
+      "gen1_03_add_glazing_lighting.py",
+      "gen1_04_energyplus_setup.py"
+    ],
+    "smoke_days": 0
+  },
+  "code_path": {
+    "pipeline": "new_dataset_gen1 (cells 0-4, 14, 46)",
+    "callback": "gen1_14_eval_callback.py",
+    "builder": "gen1_46_rollout_builder.py",
+    "policy_module": "sdar_iql_train_3_updated.py"
+  },
+  "timing": {
+    "simulation_s": 479.8,
+    "total_s": 947.9
+  },
+  "energyplus": {
+    "version_line": "Program Version,EnergyPlus, Version 25.2.0-cf7368216c (No OpenGL), YMD=2026.10.01 17:52,",
+    "completion_line": "************* EnergyPlus Completed Successfully-- 5 Warning; 0 Severe Errors; Elapsed Time=00hr 07min 58.58sec"
+  },
+  "provenance": {
+    "actor_checked": true,
+    "actor_heating_dims_compared": 2577,
+    "actor_share_reproduced": 0.9992239037640668,
+    "actor_match": true,
+    "selector_match": true,
+    "checkpoint": "checkpoints/sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3/sdar_iql_sdar_iql_v10_thermal3_tclip50_14episodes_gru2_seq36_augmented_value_standard_iql_beta3_checkpoint_epoch150.pt",
+    "checkpoint_epoch": 150,
+    "npz": "aamas2027/runs/b3e150_sample_s20260728/rollout.npz",
+    "logit_key": "selection_logits",
+    "n_steps": 2000,
+    "mean_abs_logit_diff": 0.0011940859258174896,
+    "max_abs_logit_diff": 3.197993755340576,
+    "match": true,
+    "tolerance_mean": 0.01
+  },
+  "outputs": {
+    "rollout.csv": {
+      "sha256": "64819a536a994c43cee984723e09726222aca53caa2eb8288c51fcb1b1e75201",
+      "bytes": 104730072
+    },
+    "rollout.npz": {
+      "sha256": "309e02c19f483558e06c96c4baea2301c53c0e379e5bfaea71d2d325c2d34985",
+      "bytes": 18068780
+    },
+    "rollout_stats.json": {
+      "sha256": "b2b1562f1fb8bb999c1617394f94c5309e9dc5b4e92d515677a7fe299e3ae44d",
+      "bytes": 6928
+    }
+  },
+  "finished": "2026-10-01T18:01:00"
+}

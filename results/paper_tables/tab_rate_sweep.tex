@@ -1,0 +1,28 @@
+\begin{table}[t]
+\caption{State-independent selectors at different update budgets (same checkpoint and proposals). $k\times$ learned: $k$ times the learned per-subsystem update rates; RBC rate: the behaviour controller's own per-subsystem rates. Means over selector seeds.}
+\label{tab:rates}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Selector & Budget & kWh/d & Viol.\,\% & Kzh/d & Vis.\,\% & Upd.\,\% \\
+\midrule
+Learned (sampled) & -- & 344.1 & 7.4 & 1.23 & 48.4 & 13.7 \\
+\addlinespace
+Periodic & $1\times$ learned & 301.6 & 22.0 & 5.79 & 27.7 & 13.6 \\
+ & $2\times$ learned & 328.5 & 18.9 & 5.07 & 48.6 & 27.2 \\
+ & $4\times$ learned & 363.1 & 14.6 & 3.18 & 58.7 & 54.4 \\
+ & RBC rate & 339.8 & 17.8 & 4.68 & 29.1 & 26.9 \\
+\addlinespace
+Random & $1\times$ learned & 296.9 & 23.9 & 6.48 & 20.9 & 13.6 \\
+ & $2\times$ learned & 314.4 & 19.8 & 5.11 & 33.3 & 27.2 \\
+ & $4\times$ learned & 357.8 & 14.7 & 3.03 & 48.9 & 54.3 \\
+ & RBC rate & 313.9 & 19.6 & 5.09 & 19.3 & 26.9 \\
+\addlinespace
+Time of day & $1\times$ learned & 310.3 & 22.4 & 5.90 & 44.4 & 13.6 \\
+\addlinespace
+Always update & -- & 359.8 & 14.7 & 2.73 & 48.8 & 100.0 \\
+\bottomrule
+\end{tabular}}
+\end{table}

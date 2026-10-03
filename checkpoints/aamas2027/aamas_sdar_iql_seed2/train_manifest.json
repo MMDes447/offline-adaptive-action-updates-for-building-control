@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "algo": "sdar_iql",
+  "seed": 2,
+  "epochs": 100,
+  "run_name": "aamas_sdar_iql_seed2",
+  "checkpoint_dir": "checkpoints/aamas2027/aamas_sdar_iql_seed2",
+  "started": "2026-10-01T23:36:23",
+  "command": "python aamas2027/scripts/train_baselines.py --algo sdar_iql --seed 2 --epochs 100",
+  "code": {
+    "train_baselines.py": "69ce1c0655f8dd2ae7bb095f33bd59d003630692581b62e84b8b458e449f18d0",
+    "train_beta3_cell00.py": "aeb0da739b2403319de1ac321b0a3416dbf68add84d36a97002f5ae1091ed44d",
+    "notebook": {
+      "sha256": "ba938c8e1a2f4a162b2815c18d0fbc2fa5d42b2e3bf2d91760d529df81c32720",
+      "n_cells": 1
+    }
+  },
+  "dataset_sha256": "5c6c255e3b7791c4c31b76ea865a36a1933edb3b443a1406970056c7582cadfb",
+  "checkpoints": {
+    "sdar_iql_aamas_sdar_iql_seed2_checkpoint_epoch100.pt": "5d7cc71e9df5919cc4ec0f32878771a093661eed29196963b113d94bc9124d05",
+    "sdar_iql_aamas_sdar_iql_seed2_checkpoint_epoch50.pt": "38f60f7ab0c800bf1e4f6bfdc01795aa7ab8840de4eb901cf1c6ffb14d5f0eae",
+    "sdar_iql_best_aamas_sdar_iql_seed2.pt": "65add29c94557dcc067c8abfbd094c83c2b9466f471f2a878af97eacadca175a",
+    "sdar_iql_final_aamas_sdar_iql_seed2.pt": "dfb9882632469137eb380e8636a2d28c70577a0eb87aa4d393d70f47d01fd66d"
+  },
+  "finished": "2026-10-02T00:06:13",
+  "train_s": 1790.0
+}

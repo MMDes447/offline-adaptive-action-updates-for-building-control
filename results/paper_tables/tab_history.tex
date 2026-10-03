@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Observation-history ablation: our agent with the 36-step history ($K{=}36$, reported checkpoint) and the same method trained with $K{=}1$ (the GRU sees only the current observation; one training run). Means over selector seeds ($\pm$ half-range). $\Delta$: $K{=}1$ minus $K{=}36$, paired by day, 95\% moving-block bootstrap interval (30-day blocks).}
+\label{tab:history}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+History & kWh/d & Viol.\,\% & Kzh/d & Vis.\,\% & Upd.\,\% \\
+\midrule
+$K{=}36$ (ours) {\scriptsize($n$=5)} & 344.1{\scriptsize$\pm$3.2} & 7.43{\scriptsize$\pm$1.06} & 1.23{\scriptsize$\pm$0.29} & 48.4{\scriptsize$\pm$1.1} & 13.7{\scriptsize$\pm$0.1} \\
+$K{=}1$ {\scriptsize($n$=3)} & 344.6{\scriptsize$\pm$1.1} & 4.89{\scriptsize$\pm$0.04} & 0.54{\scriptsize$\pm$0.01} & 46.1{\scriptsize$\pm$0.6} & 15.7{\scriptsize$\pm$0.2} \\
+\addlinespace
+$\Delta$ & +0.5 [-0.5, +4.6] & -2.54 [-3.23, -1.74] & -0.68 [-1.00, -0.28] & & \\
+\bottomrule
+\end{tabular}}
+\end{table}

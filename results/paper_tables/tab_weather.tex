@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Rule-based controllers and a held-out climate. San Francisco (SF) is the training climate; Fresno was used neither for data collection, training nor reward design, and all controllers run unchanged there (only the weather file differs). Data RBC: the controller that generated the dataset (idle band 21--24\,$^\circ$C); retuned RBC: the same controller with its idle band moved to 22--25\,$^\circ$C. Ours: mean over selector seeds of the reported checkpoint. Paired differences with 95\% intervals are given in the text.}
+\label{tab:weather}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}llrrrrr@{}}
+\toprule
+Climate & Controller & kWh/d & Viol.\,\% & Kzh/d & Vis.\,\% & Upd.\,\% \\
+\midrule
+SF (training) & Data RBC & 401.5 & 19.5 & 3.83 & 65.6 & 26.9 \\
+ & Retuned RBC & 396.9 & 6.9 & 1.19 & 65.1 & 12.1 \\
+ & Ours & 344.1 & 7.4 & 1.23 & 48.4 & 13.7 \\
+\addlinespace
+Fresno & Data RBC & 586.5 & 16.7 & 3.45 & 69.3 & 24.0 \\
+ & Retuned RBC & 596.4 & 12.2 & 2.53 & 69.0 & 13.2 \\
+ & Ours & 556.9 & 12.0 & 2.59 & 48.7 & 15.4 \\
+\bottomrule
+\end{tabular*}
+\end{table}

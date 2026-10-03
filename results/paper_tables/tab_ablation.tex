@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Update-selector ablation at inference time. The checkpoint, proposal policy, safeguard and weather are identical in every row. Stochastic selectors: mean$\pm$SD over five selector seeds. Random and periodic selectors use the learned policy's mean per-subsystem update probabilities; the time-of-day selector its mean probability per hour of day and dimension. Reward: mean training reward per step (higher is better). Bottom row: the behaviour controller, for reference.}
+\label{tab:ablation}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Selector & Energy & Viol. & Sev. & Visual & Upd. & Reward \\
+ & kWh/d & \% & Kzh/d & \% & \% & /step \\
+\midrule
+Learned (sampled) & 344.1$\pm$2.9 & 7.4$\pm$0.8 & 1.23$\pm$0.22 & 48.4$\pm$0.8 & 13.7$\pm$0.1 & -0.974$\pm$0.004 \\
+Learned ($p\geq0.5$) & 352.1 & 10.2 & 2.32 & 40.2 & 9.9 & -1.041 \\
+Random, rate-matched & 296.9$\pm$0.9 & 23.9$\pm$0.6 & 6.48$\pm$0.21 & 20.9$\pm$0.4 & 13.6$\pm$0.0 & -1.301$\pm$0.005 \\
+Periodic, rate-matched & 301.6$\pm$2.1 & 22.0$\pm$1.0 & 5.79$\pm$0.36 & 27.7$\pm$0.3 & 13.6$\pm$0.0 & -1.238$\pm$0.009 \\
+Time of day, rate-matched & 310.3$\pm$1.0 & 22.4$\pm$0.4 & 5.90$\pm$0.13 & 44.4$\pm$1.2 & 13.6$\pm$0.0 & -1.202$\pm$0.005 \\
+Always update & 359.8 & 14.7 & 2.73 & 48.8 & 100.0 & -1.863 \\
+\addlinespace
+Behaviour controller & 401.5 & 19.5 & 3.83 & 65.6 & 26.9 & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

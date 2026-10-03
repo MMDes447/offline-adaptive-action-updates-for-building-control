@@ -1,0 +1,1 @@
+epmodel = fr.load_energyplus_model(ref_models["medium_office"]) #

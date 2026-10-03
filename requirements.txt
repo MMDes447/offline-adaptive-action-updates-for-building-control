@@ -1,0 +1,9 @@
+# Versions used for the paper (Python 3.11.15). EnergyPlus 25.2 is provided by pyenergyplus.
+torch==2.11.0
+numpy==2.4.6
+pandas==3.0.2
+frads==2.1.15
+pyradiance==1.1.5
+pyenergyplus
+pywincalc
+matplotlib

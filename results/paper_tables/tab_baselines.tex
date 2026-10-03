@@ -1,0 +1,21 @@
+\begin{table}[t]
+\caption{Comparison with offline baselines trained on the same data with the same encoder, actor, optimiser and number of updates (100 epochs; for our reported run, the 100-epoch checkpoint of a 500-epoch run), and evaluated with the same protocol. Values: mean over evaluation seeds within each training run, then mean $\pm$ SD over training runs ($n_{\mathrm{tr}}$). Full-action methods update all 19 dimensions at every step.}
+\label{tab:baselines}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Method & $n_{\mathrm{tr}}$ & Energy & Viol. & Sev. & Visual & Upd. & Reward \\
+ & & kWh/d & \% & Kzh/d & \% & \% & /step \\
+\midrule
+BC (full action) & 3 & 312.3{\scriptsize$\pm$9.2} & 29.8{\scriptsize$\pm$1.1} & 9.91{\scriptsize$\pm$0.77} & 48.5{\scriptsize$\pm$2.3} & 100.0{\scriptsize$\pm$0.0} & -1.697{\scriptsize$\pm$0.005} \\
+IQL (full action) & 3 & 320.1{\scriptsize$\pm$15.1} & 26.0{\scriptsize$\pm$2.5} & 8.12{\scriptsize$\pm$1.83} & 53.0{\scriptsize$\pm$4.0} & 100.0{\scriptsize$\pm$0.0} & -1.643{\scriptsize$\pm$0.010} \\
+IQL (full action) $+\,a_{t-1}$ & 5 & 336.6{\scriptsize$\pm$10.3} & 15.0{\scriptsize$\pm$4.4} & 2.86{\scriptsize$\pm$1.93} & 49.3{\scriptsize$\pm$5.6} & 100.0{\scriptsize$\pm$0.0} & -1.510{\scriptsize$\pm$0.052} \\
+BC (act/repeat) & 3 & 313.5{\scriptsize$\pm$21.0} & 31.1{\scriptsize$\pm$5.6} & 11.34{\scriptsize$\pm$2.70} & 56.2{\scriptsize$\pm$2.4} & 15.2{\scriptsize$\pm$1.6} & -1.281{\scriptsize$\pm$0.046} \\
+\textbf{Ours} & 5 & 343.2{\scriptsize$\pm$5.6} & 7.7{\scriptsize$\pm$1.7} & 1.31{\scriptsize$\pm$0.54} & 51.3{\scriptsize$\pm$2.6} & 13.9{\scriptsize$\pm$0.7} & -0.965{\scriptsize$\pm$0.012} \\
+\addlinespace
+Behaviour controller & -- & 401.5 & 19.5 & 3.83 & 65.6 & 26.9 & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,490 @@
+{
+  "weather": {
+    "sf": {
+      "label": "SF (training)",
+      "rbc": {
+        "combined_kwh_day": 401.51609892356527,
+        "tv_pct": 19.549086757990867,
+        "dzh_day": 3.8322237652343665,
+        "vis_in_pct": 65.55793378995433,
+        "upd_pct": 26.904200893031486,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "ours": {
+        "combined_kwh_day": 344.10616577728337,
+        "tv_pct": 7.431278538812785,
+        "dzh_day": 1.2254325305660956,
+        "vis_in_pct": 48.39098173515981,
+        "upd_pct": 13.738385233236633,
+        "combined_kwh_day_sd": 2.8808163472755215,
+        "tv_pct_sd": 0.7681110629274621,
+        "dzh_day_sd": 0.21891588142821286,
+        "vis_in_pct_sd": 0.8172948723252608,
+        "upd_pct_sd": 0.105859948725957,
+        "n": 5
+      },
+      "paired_ours_minus_rbc": {
+        "combined_kwh": [
+          -57.40884087205919,
+          -73.2966732698124,
+          -41.934983254435295
+        ],
+        "tv_pct": [
+          -12.117808219178082,
+          -14.703150684931506,
+          -8.466404109589043
+        ],
+        "dzh": [
+          -2.6067416381835935,
+          -3.298324192796123,
+          -1.6033347340849435
+        ]
+      },
+      "training_seeds": null,
+      "rbc_band22_25": {
+        "combined_kwh_day": 396.8984594291283,
+        "tv_pct": 6.949771689497716,
+        "dzh_day": 1.1889833117069362,
+        "vis_in_pct": 65.1312785388128,
+        "upd_pct": 12.054423049385102,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "paired_ours_minus_rbc_band22_25": {
+        "combined_kwh": [
+          -52.791289232254954,
+          -71.3782420390401,
+          -25.649836821232007
+        ],
+        "tv_pct": [
+          0.48150684931506865,
+          -0.36758561643835624,
+          1.0598744292237448
+        ],
+        "dzh": [
+          0.03644852538087048,
+          -0.2796685833255996,
+          0.25517853758215364
+        ]
+      }
+    },
+    "fresno": {
+      "label": "Fresno",
+      "rbc": {
+        "combined_kwh_day": 586.4713911228315,
+        "tv_pct": 16.703196347031962,
+        "dzh_day": 3.4505592351562266,
+        "vis_in_pct": 69.33932648401826,
+        "upd_pct": 23.98157058583787,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "ours": {
+        "combined_kwh_day": 556.896945325306,
+        "tv_pct": 12.01636225266362,
+        "dzh_day": 2.5939791500891594,
+        "vis_in_pct": 48.731925418569254,
+        "upd_pct": 15.415023984741625,
+        "combined_kwh_day_sd": 4.799760451601319,
+        "tv_pct_sd": 1.4863019543751936,
+        "dzh_day_sd": 0.5375363540519958,
+        "vis_in_pct_sd": 0.8082763309460226,
+        "upd_pct_sd": 0.20646270151463345,
+        "n": 3
+      },
+      "paired_ours_minus_rbc": {
+        "combined_kwh": [
+          -29.573883117810976,
+          -52.53146019934148,
+          -13.094279225328311
+        ],
+        "tv_pct": [
+          -4.686834094368341,
+          -8.224248477929983,
+          1.1830859969558605
+        ],
+        "dzh": [
+          -0.8565637878812788,
+          -1.5619691890124308,
+          0.4499387686074783
+        ]
+      },
+      "training_seeds": {
+        "1": {
+          "combined_kwh_day": 543.0183052641512,
+          "tv_pct": 15.997716894977168,
+          "dzh_day": 4.835554953196106,
+          "vis_in_pct": 53.20062785388128,
+          "upd_pct": 15.591801093708224,
+          "combined_kwh_day_sd": null,
+          "tv_pct_sd": null,
+          "dzh_day_sd": null,
+          "vis_in_pct_sd": null,
+          "upd_pct_sd": null,
+          "n": 1
+        },
+        "2": {
+          "combined_kwh_day": 546.4421471054527,
+          "tv_pct": 16.42808219178082,
+          "dzh_day": 5.024373867193352,
+          "vis_in_pct": 55.4851598173516,
+          "upd_pct": 15.344259734173423,
+          "combined_kwh_day_sd": null,
+          "tv_pct_sd": null,
+          "dzh_day_sd": null,
+          "vis_in_pct_sd": null,
+          "upd_pct_sd": null,
+          "n": 1
+        },
+        "5": {
+          "combined_kwh_day": 563.1844751125985,
+          "tv_pct": 11.775114155251142,
+          "dzh_day": 2.953118462634142,
+          "vis_in_pct": 50.89183789954338,
+          "upd_pct": 14.883824794391465,
+          "combined_kwh_day_sd": null,
+          "tv_pct_sd": null,
+          "dzh_day_sd": null,
+          "vis_in_pct_sd": null,
+          "upd_pct_sd": null,
+          "n": 1
+        },
+        "6": {
+          "combined_kwh_day": 528.3759724651113,
+          "tv_pct": 20.56392694063927,
+          "dzh_day": 6.256284961639835,
+          "vis_in_pct": 55.95034246575342,
+          "upd_pct": 14.7399263584483,
+          "combined_kwh_day_sd": null,
+          "tv_pct_sd": null,
+          "dzh_day_sd": null,
+          "vis_in_pct_sd": null,
+          "upd_pct_sd": null,
+          "n": 1
+        }
+      },
+      "rbc_band22_25": {
+        "combined_kwh_day": 596.3793540811538,
+        "tv_pct": 12.206621004566209,
+        "dzh_day": 2.5281760358141785,
+        "vis_in_pct": 68.97831050228311,
+        "upd_pct": 13.172164414727911,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "paired_ours_minus_rbc_band22_25": {
+        "combined_kwh": [
+          -39.481657568466694,
+          -64.66460222900852,
+          -8.209157562160005
+        ],
+        "tv_pct": [
+          -0.1902587519025874,
+          -3.859627092846271,
+          2.6058219178082194
+        ],
+        "dzh": [
+          0.06580186231314118,
+          -1.221656213546997,
+          1.1127921507383949
+        ]
+      }
+    }
+  },
+  "rates": {
+    "learned": {
+      "combined_kwh_day": 344.10616577728337,
+      "tv_pct": 7.431278538812785,
+      "dzh_day": 1.2254325305660956,
+      "vis_in_pct": 48.39098173515981,
+      "upd_pct": 13.738385233236633,
+      "combined_kwh_day_sd": 2.8808163472755215,
+      "tv_pct_sd": 0.7681110629274621,
+      "dzh_day_sd": 0.21891588142821286,
+      "vis_in_pct_sd": 0.8172948723252608,
+      "upd_pct_sd": 0.105859948725957,
+      "n": 5
+    },
+    "always": {
+      "combined_kwh_day": 359.75754602542605,
+      "tv_pct": 14.674657534246574,
+      "dzh_day": 2.729208190659005,
+      "vis_in_pct": 48.82990867579909,
+      "upd_pct": 100.0,
+      "combined_kwh_day_sd": null,
+      "tv_pct_sd": null,
+      "dzh_day_sd": null,
+      "vis_in_pct_sd": null,
+      "upd_pct_sd": null,
+      "n": 1
+    },
+    "threshold": {
+      "combined_kwh_day": 352.0825657585562,
+      "tv_pct": 10.199771689497716,
+      "dzh_day": 2.320869971130007,
+      "vis_in_pct": 40.23829908675799,
+      "upd_pct": 9.929092218168854,
+      "combined_kwh_day_sd": null,
+      "tv_pct_sd": null,
+      "dzh_day_sd": null,
+      "vis_in_pct_sd": null,
+      "upd_pct_sd": null,
+      "n": 1
+    },
+    "clock": {
+      "combined_kwh_day": 310.320413859106,
+      "tv_pct": 22.379452054794523,
+      "dzh_day": 5.9024533116415325,
+      "vis_in_pct": 44.44292237442922,
+      "upd_pct": 13.586315529114648,
+      "combined_kwh_day_sd": 0.9842178082939073,
+      "tv_pct_sd": 0.37921594371772527,
+      "dzh_day_sd": 0.1292374732654228,
+      "vis_in_pct_sd": 1.1929362853124832,
+      "upd_pct_sd": 0.023931264749333433,
+      "n": 5
+    },
+    "periodic_x1": {
+      "combined_kwh_day": 301.6214375145037,
+      "tv_pct": 21.98173515981735,
+      "dzh_day": 5.789861812209422,
+      "vis_in_pct": 27.697203196347033,
+      "upd_pct": 13.590821743183849,
+      "combined_kwh_day_sd": 2.1104556200371594,
+      "tv_pct_sd": 1.0026149194355705,
+      "dzh_day_sd": 0.3603281316590088,
+      "vis_in_pct_sd": 0.349835386072315,
+      "upd_pct_sd": 0.00013056409599154737,
+      "n": 5
+    },
+    "periodic_x2": {
+      "combined_kwh_day": 328.4994756144949,
+      "tv_pct": 18.86244292237443,
+      "dzh_day": 5.067670245101551,
+      "vis_in_pct": 48.553795662100455,
+      "upd_pct": 27.17988105597619,
+      "combined_kwh_day_sd": 4.8454350931761265,
+      "tv_pct_sd": 0.03632397848560929,
+      "dzh_day_sd": 0.03732179416562617,
+      "vis_in_pct_sd": 0.8566404926189762,
+      "upd_pct_sd": 0.0,
+      "n": 2
+    },
+    "periodic_x4": {
+      "combined_kwh_day": 363.1198351196884,
+      "tv_pct": 14.584474885844749,
+      "dzh_day": 3.176168600684915,
+      "vis_in_pct": 58.66795091324201,
+      "upd_pct": 54.35775935014385,
+      "combined_kwh_day_sd": 0.5546193881211238,
+      "tv_pct_sd": 0.29220622692868836,
+      "dzh_day_sd": 0.12029173882518628,
+      "vis_in_pct_sd": 0.6144806360482425,
+      "upd_pct_sd": 0.0,
+      "n": 2
+    },
+    "periodic_rbcrate": {
+      "combined_kwh_day": 339.7906679813103,
+      "tv_pct": 17.75,
+      "dzh_day": 4.678381694120963,
+      "vis_in_pct": 29.083190639269407,
+      "upd_pct": 26.905552757252252,
+      "combined_kwh_day_sd": 4.447768843769915,
+      "tv_pct_sd": 0.15982550533668588,
+      "dzh_day_sd": 0.09321582215401214,
+      "vis_in_pct_sd": 0.2633488440206761,
+      "upd_pct_sd": 7.080832279402033e-05,
+      "n": 2
+    },
+    "constant_x1": {
+      "combined_kwh_day": 296.85634166603035,
+      "tv_pct": 23.92876712328767,
+      "dzh_day": 6.476400664108579,
+      "vis_in_pct": 20.90753424657534,
+      "upd_pct": 13.58845848424978,
+      "combined_kwh_day_sd": 0.9101185125483704,
+      "tv_pct_sd": 0.5579241406866254,
+      "dzh_day_sd": 0.2134920891096531,
+      "vis_in_pct_sd": 0.3554543216145891,
+      "upd_pct_sd": 0.02603661602221986,
+      "n": 5
+    },
+    "constant_x2": {
+      "combined_kwh_day": 314.39636618812244,
+      "tv_pct": 19.817922374429223,
+      "dzh_day": 5.110127682396351,
+      "vis_in_pct": 33.27554223744292,
+      "upd_pct": 27.19425087195242,
+      "combined_kwh_day_sd": 0.3229831539006136,
+      "tv_pct_sd": 0.28332703218775995,
+      "dzh_day_sd": 0.10237353368877533,
+      "vis_in_pct_sd": 0.13016092290677037,
+      "upd_pct_sd": 0.036749519531013485,
+      "n": 2
+    },
+    "constant_x4": {
+      "combined_kwh_day": 357.8058324098125,
+      "tv_pct": 14.702054794520548,
+      "dzh_day": 3.028582507524886,
+      "vis_in_pct": 48.92051940639269,
+      "upd_pct": 54.347745541101176,
+      "combined_kwh_day_sd": 1.348366426221566,
+      "tv_pct_sd": 0.5408236796746431,
+      "dzh_day_sd": 0.1922490620926532,
+      "vis_in_pct_sd": 0.24316885597311205,
+      "upd_pct_sd": 0.002407482975062007,
+      "n": 2
+    },
+    "constant_rbcrate": {
+      "combined_kwh_day": 313.85914499504315,
+      "tv_pct": 19.603310502283104,
+      "dzh_day": 5.086338700999403,
+      "vis_in_pct": 19.255850456621005,
+      "upd_pct": 26.925430168201956,
+      "combined_kwh_day_sd": 0.9295433530084847,
+      "tv_pct_sd": 0.13480232015770724,
+      "dzh_day_sd": 0.004473293416519806,
+      "vis_in_pct_sd": 0.023206986254694403,
+      "upd_pct_sd": 0.013595197976791044,
+      "n": 2
+    }
+  },
+  "baselines_e50": {
+    "iql_flat": {
+      "e50": {
+        "combined_kwh_day": 306.7810123868476,
+        "tv_pct": 27.437214611872147,
+        "dzh_day": 8.438635049929285,
+        "vis_in_pct": 52.47431506849315,
+        "upd_pct": 100.0,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "e100": {
+        "combined_kwh_day": 314.3912335615877,
+        "tv_pct": 28.194063926940636,
+        "dzh_day": 9.660609210661805,
+        "vis_in_pct": 57.679794520547944,
+        "upd_pct": 100.0,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      }
+    },
+    "bc_flat": {
+      "e50": {
+        "combined_kwh_day": 294.3763739181432,
+        "tv_pct": 29.58219178082192,
+        "dzh_day": 9.840439913754103,
+        "vis_in_pct": 44.13384703196347,
+        "upd_pct": 100.0,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "e100": {
+        "combined_kwh_day": 302.23463906860286,
+        "tv_pct": 31.01598173515982,
+        "dzh_day": 10.538700186863103,
+        "vis_in_pct": 47.75542237442922,
+        "upd_pct": 100.0,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      }
+    },
+    "bc_sdar": {
+      "e50": {
+        "combined_kwh_day": 313.5382241943047,
+        "tv_pct": 29.54566210045662,
+        "dzh_day": 11.111699408071743,
+        "vis_in_pct": 56.64240867579908,
+        "upd_pct": 14.6559105005803,
+        "combined_kwh_day_sd": null,
+        "tv_pct_sd": null,
+        "dzh_day_sd": null,
+        "vis_in_pct_sd": null,
+        "upd_pct_sd": null,
+        "n": 1
+      },
+      "e100": {
+        "combined_kwh_day": 333.05038950566626,
+        "tv_pct": 26.222602739726028,
+        "dzh_day": 8.7665798906009,
+        "vis_in_pct": 53.771404109589035,
+        "upd_pct": 16.960021202571678,
+        "combined_kwh_day_sd": 6.161071245239549,
+        "tv_pct_sd": 1.7419070180786875,
+        "dzh_day_sd": 0.9488157084868943,
+        "vis_in_pct_sd": 0.22827036604971948,
+        "upd_pct_sd": 0.3208394777843281,
+        "n": 3
+      }
+    }
+  },
+  "rbc_sf_reproduction": {
+    "combined_kwh_day": [
+      401.51609892356527,
+      401.51609892356527
+    ],
+    "tv_pct": [
+      19.549086757990867,
+      19.549086757990867
+    ],
+    "dzh_day": [
+      3.8322237652343665,
+      3.8322237652343665
+    ],
+    "vis_in_pct": [
+      65.55793378995433,
+      65.55793378995433
+    ],
+    "upd_pct": [
+      26.904200893031486,
+      26.904200893031486
+    ]
+  },
+  "best_static": {
+    "combined_kwh_day": 363.1198351196884,
+    "tv_pct": 14.584474885844749,
+    "dzh_day": 3.176168600684915,
+    "vis_in_pct": 58.66795091324201,
+    "upd_pct": 54.35775935014385,
+    "combined_kwh_day_sd": 0.5546193881211238,
+    "tv_pct_sd": 0.29220622692868836,
+    "dzh_day_sd": 0.12029173882518628,
+    "vis_in_pct_sd": 0.6144806360482425,
+    "upd_pct_sd": 0.0,
+    "n": 2
+  }
+}

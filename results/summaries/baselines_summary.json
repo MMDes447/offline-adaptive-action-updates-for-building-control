@@ -1,0 +1,210 @@
+{
+  "bc_flat": {
+    "label": "BC (full action)",
+    "n_train": 3,
+    "n_eval": 3,
+    "train_seeds": [
+      1,
+      2,
+      3
+    ],
+    "combined_kwh_day": 312.3313434802347,
+    "combined_kwh_day_sd_train": 9.233863320525762,
+    "tv_pct": 29.753805175038053,
+    "tv_pct_sd_train": 1.110270201067714,
+    "dzh_day": 9.906366977565725,
+    "dzh_day_sd_train": 0.7740484201845009,
+    "vis_in_pct": 48.51455479452054,
+    "vis_in_pct_sd_train": 2.345723755037485,
+    "upd_pct": 100.0,
+    "upd_pct_sd_train": 0.0,
+    "reward_mean": -1.697217543919881,
+    "reward_mean_sd_train": 0.005041772709804277,
+    "delta_vs_ours": {
+      "combined_kwh": [
+        -31.017350091360946,
+        -46.912782304272156,
+        -1.785272870314632
+      ],
+      "tv_pct": [
+        22.04161070821023,
+        14.036704830333962,
+        27.244627428597013
+      ],
+      "dzh": [
+        8.602367918885632,
+        3.4056085637783613,
+        11.916565162067567
+      ]
+    }
+  },
+  "iql_flat": {
+    "label": "IQL (full action)",
+    "n_train": 3,
+    "n_eval": 3,
+    "train_seeds": [
+      1,
+      2,
+      3
+    ],
+    "combined_kwh_day": 320.0736753117265,
+    "combined_kwh_day_sd_train": 15.107876135695447,
+    "tv_pct": 25.978310502283104,
+    "tv_pct_sd_train": 2.5367837170217897,
+    "dzh_day": 8.119103357543723,
+    "dzh_day_sd_train": 1.8301183724004821,
+    "vis_in_pct": 53.02178462709285,
+    "vis_in_pct_sd_train": 4.046995936533728,
+    "upd_pct": 100.0,
+    "upd_pct_sd_train": 0.0,
+    "reward_mean": -1.6426832675933838,
+    "reward_mean_sd_train": 0.010196750994536765,
+    "delta_vs_ours": {
+      "combined_kwh": [
+        -23.275165564508196,
+        -38.68041515741528,
+        -0.623738676550856
+      ],
+      "tv_pct": [
+        18.26611603545528,
+        11.738197242367265,
+        23.08393488674008
+      ],
+      "dzh": [
+        6.8151383031181965,
+        2.6438019597271003,
+        10.002343925449093
+      ]
+    }
+  },
+  "iql_flat_prev": {
+    "label": "IQL (full action) $+\\,a_{t-1}$",
+    "n_train": 5,
+    "n_eval": 5,
+    "train_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "combined_kwh_day": 336.6022128876201,
+    "combined_kwh_day_sd_train": 10.3221849757503,
+    "tv_pct": 15.032420091324202,
+    "tv_pct_sd_train": 4.393646732742996,
+    "dzh_day": 2.8559858415879757,
+    "dzh_day_sd_train": 1.934342850315639,
+    "vis_in_pct": 49.2908105022831,
+    "vis_in_pct_sd_train": 5.589842209832174,
+    "upd_pct": 100.0,
+    "upd_pct_sd_train": 0.0,
+    "reward_mean": -1.5102383375167847,
+    "reward_mean_sd_train": 0.052196388733521365,
+    "delta_vs_ours": {
+      "combined_kwh": [
+        -6.746942458507631,
+        -8.90282042836986,
+        -0.7421971330621445
+      ],
+      "tv_pct": [
+        7.320225624496374,
+        5.824325812516787,
+        7.84051537738383
+      ],
+      "dzh": [
+        1.5521209225794206,
+        0.7940217600521974,
+        1.767281814451215
+      ]
+    }
+  },
+  "bc_sdar": {
+    "label": "BC (act/repeat)",
+    "n_train": 3,
+    "n_eval": 9,
+    "train_seeds": [
+      1,
+      2,
+      3
+    ],
+    "combined_kwh_day": 313.4804740777254,
+    "combined_kwh_day_sd_train": 20.993732192700023,
+    "tv_pct": 31.146245560629126,
+    "tv_pct_sd_train": 5.592569980297957,
+    "dzh_day": 11.34406324089372,
+    "dzh_day_sd_train": 2.704027047062307,
+    "vis_in_pct": 56.18451927955352,
+    "vis_in_pct_sd_train": 2.3771857150113473,
+    "upd_pct": 15.152840211095544,
+    "upd_pct_sd_train": 1.6379884164064111,
+    "reward_mean": -1.2814495695961845,
+    "reward_mean_sd_train": 0.04574857967750508,
+    "delta_vs_ours": {
+      "combined_kwh": [
+        -29.86824135708559,
+        -43.15318103664746,
+        -6.440115489216082
+      ],
+      "tv_pct": [
+        23.434051093801298,
+        15.457162309368192,
+        28.53982526039335
+      ],
+      "dzh": [
+        10.040036828783961,
+        5.192084101018531,
+        12.986492014959605
+      ]
+    }
+  },
+  "sdar_iql": {
+    "label": "\\textbf{Ours}",
+    "n_train": 5,
+    "n_eval": 17,
+    "train_seeds": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "combined_kwh_day": 343.2483661067581,
+    "combined_kwh_day_sd_train": 5.625992124122407,
+    "tv_pct": 7.749649923896499,
+    "tv_pct_sd_train": 1.7027627957014355,
+    "dzh_day": 1.3142891023106358,
+    "dzh_day_sd_train": 0.5355587511340058,
+    "vis_in_pct": 51.32583713850837,
+    "vis_in_pct_sd_train": 2.5719708476828558,
+    "upd_pct": 13.882298356099728,
+    "upd_pct_sd_train": 0.6809358423394669,
+    "reward_mean": -0.9650105198224386,
+    "reward_mean_sd_train": 0.011991970417887248
+  },
+  "rbc": {
+    "label": "Behaviour controller",
+    "lighting_kwh_day": 21.069279817600954,
+    "hvac_kwh_day": 380.4468191059643,
+    "combined_kwh_day": 401.51609892356527,
+    "tv_pct": 19.549086757990867,
+    "cold_pct": 19.228310502283104,
+    "hot_pct": 0.3207762557077626,
+    "dzh_day": 3.8322237652343665,
+    "vis_in_pct": 65.55793378995433,
+    "vis_under_pct": 0.0,
+    "vis_over_pct": 34.44206621004567,
+    "glare_pct": 10.956050228310502,
+    "core_in_pct": 100.0,
+    "unocc_light_kwh_day": 0.0,
+    "glz_clear_pct": 21.027397260273972,
+    "glz_dark_pct": 11.361301369863014,
+    "glz_clear_sunny_pct": 0.47962747380675197,
+    "upd_pct": 26.904200893031486,
+    "persistence_steps": 3.716891663037693,
+    "upd_glazing_pct": 2.788770714815731,
+    "upd_lighting_pct": 7.153104130596093,
+    "upd_heating_pct": 46.42592134553549,
+    "upd_cooling_pct": 46.42592134553549,
+    "reward_mean": -1.1549736261367798
+  }
+}
